@@ -24,7 +24,8 @@
 <script>
 const canvas = document.getElementById("canvas");
 let windowwidth = document.documentElement.clientWidth, windowheight = document.documentElement.clientHeight;
-canvas.style.cssText = `width: ${windowwidth}; height: ${windowheight};`;
+canvas.setAttribute("width", windowwidth);
+canvas.setAttribute("height", windowheight);
 const ctx = canvas.getContext("2d");
 
 </script>
